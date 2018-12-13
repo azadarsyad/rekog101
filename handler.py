@@ -17,8 +17,8 @@ def compare_faces(source, target):
 	    SimilarityThreshold=80
 	)
 	result = {
-		'similarity': res['FaceMatches'][0]['Similarity'],
-		'confidence': res['FaceMatches'][0]['Face']['Confidence'],
+		'source': res['SourceImageFace'],
+		'match': res['FaceMatches'],
 	}
 	return result
 
